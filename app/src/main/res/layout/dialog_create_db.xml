@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Create New Database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/editDbName"
+        android:hint="Enter Database Name"
+        android:layout_below="@id/tvTitle"
+        android:maxLength="20"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="cancel"
+            android:layout_weight="1"
+            android:textColor="@color/cardview_light_background"
+            android:background="@color/cardview_dark_background"
+            android:layout_width="0dp"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:text="Create"
+            android:textColor="@color/cardview_light_background"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
